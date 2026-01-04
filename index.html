@@ -13,18 +13,17 @@
             color: #111;
         }
 
-        /* Hjem-knapp */
+        /* Hjem-knapp med hus */
         .home-button {
             position: fixed;
             top: 14px;
             left: 14px;
             background: #ffd400;
             color: black;
-            font-weight: bold;
-            padding: 10px 14px;
+            font-size: 20px;
+            padding: 10px 12px;
             border-radius: 10px;
             text-decoration: none;
-            font-size: 14px;
             z-index: 999;
         }
 
@@ -51,7 +50,6 @@
 
         .image img {
             width: 100%;
-            height: auto;
             border-radius: 14px;
             margin-bottom: 20px;
         }
@@ -96,12 +94,47 @@
             font-size: 13px;
             color: #666;
         }
+
+        /* Cookie popup */
+        .cookie {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            border-top: 1px solid #ddd;
+            padding: 16px;
+            z-index: 1000;
+        }
+
+        .cookie p {
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .cookie-buttons button {
+            padding: 10px 14px;
+            border-radius: 8px;
+            border: none;
+            font-size: 14px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .accept {
+            background: #009ee3;
+            color: white;
+        }
+
+        .decline {
+            background: #e5e7eb;
+        }
     </style>
 </head>
 <body>
 
-<!-- Hjem-knapp til ekte ICE -->
-<a class="home-button" href="https://www.ice.no" target="_blank">ICE</a>
+<!-- Hjem-knapp -->
+<a class="home-button" href="https://www.ice.no" target="_blank">🏠</a>
 
 <header>
     <div class="logo">ICE</div>
@@ -110,7 +143,6 @@
 <div class="container">
 
     <div class="image">
-        <!-- Ferdig bilde som funker overalt -->
         <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=800" alt="Gaming headset">
     </div>
 
@@ -136,6 +168,15 @@
 <footer>
     © 2026 ICE Norge – Alle rettigheter reservert
 </footer>
+
+<!-- Fake cookie popup -->
+<div class="cookie">
+    <p>Vi bruker informasjonskapsler for å forbedre brukeropplevelsen.</p>
+    <div class="cookie-buttons">
+        <button class="accept" onclick="rickroll()">Godta</button>
+        <button class="decline" onclick="rickroll()">Avvis</button>
+    </div>
+</div>
 
 <script>
     function rickroll() {
