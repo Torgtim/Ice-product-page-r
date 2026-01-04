@@ -86,13 +86,12 @@
             color: #666;
         }
 
-        /* Cookie popup – bred nederst, litt mot venstre */
+        /* Cookie-popup: første design (bredt, nederst) */
         .cookie {
             position: fixed;
-            bottom: 60px; 
-            left: 20px;           /* flyttet litt mot venstre */
-            width: 90%;           /* bredde */
-            transform: none;      /* fjernet sentering */
+            bottom: 0; 
+            left: 0;
+            width: 100%; /* bredt på tvers */
             background: white;
             border-top: 1px solid #ddd;
             padding: 16px 20px;
@@ -116,13 +115,8 @@
             justify-content: center;
         }
 
-        .cookie-buttons button {
-            padding: 10px 14px;
-            border-radius: 12px; /* runde knapper */
-            border: none;
-            font-size: 14px;
-            cursor: pointer;
-        }
+        /* Runde knapper på én linje */
+        .cookie-buttons button { padding: 10px 14px; border-radius: 12px; border: none; font-size: 14px; cursor: pointer; margin-right: 10px; }
 
         .accept { background: #009ee3; color: white; }
         .decline { background: #e5e7eb; }
@@ -172,7 +166,7 @@
     © 2026 ICE Norge – Alle rettigheter reservert
 </footer>
 
-<!-- Fake cookie-popup med 3 valg -->
+<!-- Cookie-popup med 3 valg -->
 <div class="cookie" id="cookieBox">
     <p>Vi bruker informasjonskapsler for å forbedre brukeropplevelsen.</p>
     <div class="cookie-buttons">
