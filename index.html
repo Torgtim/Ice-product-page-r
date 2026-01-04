@@ -13,17 +13,31 @@
             color: #111;
         }
 
+        /* Hjem-knapp */
+        .home-button {
+            position: fixed;
+            top: 14px;
+            left: 14px;
+            background: #ffd400;
+            color: black;
+            font-weight: bold;
+            padding: 10px 14px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 14px;
+            z-index: 999;
+        }
+
         header {
             background: white;
-            padding: 16px;
+            padding: 20px;
             border-bottom: 1px solid #ddd;
             text-align: center;
         }
 
-        /* Gul ICE-logo */
         .logo {
             font-weight: 800;
-            font-size: 26px;
+            font-size: 28px;
             color: #ffd400;
             letter-spacing: 2px;
         }
@@ -35,17 +49,11 @@
             background: white;
         }
 
-        .image {
-            width: 100%;
-            border-radius: 14px;
-            margin-bottom: 20px;
-        }
-
         .image img {
             width: 100%;
             height: auto;
             border-radius: 14px;
-            display: block;
+            margin-bottom: 20px;
         }
 
         h1 {
@@ -92,6 +100,9 @@
 </head>
 <body>
 
+<!-- Hjem-knapp til ekte ICE -->
+<a class="home-button" href="https://www.ice.no" target="_blank">ICE</a>
+
 <header>
     <div class="logo">ICE</div>
 </header>
@@ -99,8 +110,8 @@
 <div class="container">
 
     <div class="image">
-        <!-- Bytt src til bildet du vil bruke -->
-        <img src="headset.jpg" alt="ICE FrostSound X1 Gaming Headset">
+        <!-- Ferdig bilde som funker overalt -->
+        <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=800" alt="Gaming headset">
     </div>
 
     <h1>ICE FrostSound X1</h1>
