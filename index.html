@@ -3,78 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <title>ICE FrostSound X1 – Gaming Headset</title>
+
+    <!-- Viktig for mobil -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
             background: #f5f6f8;
             color: #111;
         }
 
-        /* Header */
         header {
             background: white;
-            padding: 15px 30px;
-            display: flex;
-            align-items: center;
+            padding: 16px;
             border-bottom: 1px solid #ddd;
+            text-align: center;
         }
 
         .logo {
             font-weight: bold;
-            font-size: 22px;
+            font-size: 24px;
             color: #009ee3;
             letter-spacing: 1px;
         }
 
         .container {
-            max-width: 900px;
-            margin: 40px auto;
+            padding: 20px;
+            max-width: 500px;
+            margin: auto;
             background: white;
-            padding: 40px;
-            border-radius: 10px;
-        }
-
-        .product {
-            display: flex;
-            gap: 40px;
-            flex-wrap: wrap;
         }
 
         .image {
-            flex: 1;
-            min-width: 250px;
-            height: 250px;
+            width: 100%;
+            height: 220px;
             background: linear-gradient(135deg, #cfd9df, #e2ebf0);
-            border-radius: 10px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #666;
-            font-size: 18px;
-        }
-
-        .info {
-            flex: 1;
-            min-width: 250px;
+            font-size: 16px;
+            margin-bottom: 20px;
         }
 
         h1 {
-            margin-top: 0;
+            font-size: 22px;
+            margin-bottom: 10px;
         }
 
         .price {
-            font-size: 24px;
-            margin: 20px 0;
+            font-size: 26px;
+            margin: 15px 0;
         }
 
         .buttons button {
-            padding: 14px 22px;
-            font-size: 15px;
-            border-radius: 6px;
+            width: 100%;
+            padding: 16px;
+            font-size: 16px;
+            border-radius: 10px;
             border: none;
             cursor: pointer;
-            margin-right: 10px;
+            margin-bottom: 12px;
         }
 
         .buy {
@@ -87,14 +79,15 @@
         }
 
         ul {
+            padding-left: 20px;
             margin-top: 20px;
         }
 
         footer {
             text-align: center;
-            margin: 30px;
-            color: #666;
+            padding: 20px;
             font-size: 13px;
+            color: #666;
         }
     </style>
 </head>
@@ -105,30 +98,28 @@
 </header>
 
 <div class="container">
-    <div class="product">
-        <div class="image">
-            Produktbilde
-        </div>
 
-        <div class="info">
-            <h1>ICE FrostSound X1</h1>
-            <p>Gaming headset med høy komfort og klar lyd for lange spilløkter.</p>
-
-            <div class="price">1 199 kr</div>
-
-            <div class="buttons">
-                <button class="buy">Legg i handlekurv</button>
-                <button class="more" onclick="rickroll()">Mer informasjon</button>
-            </div>
-
-            <ul>
-                <li>7.1 surroundlyd</li>
-                <li>Støydempende mikrofon</li>
-                <li>USB-tilkobling</li>
-                <li>Kompatibel med PC og konsoll</li>
-            </ul>
-        </div>
+    <div class="image">
+        Produktbilde
     </div>
+
+    <h1>ICE FrostSound X1</h1>
+    <p>Komfortabelt gaming-headset med klar lyd og moderne design.</p>
+
+    <div class="price">1 199 kr</div>
+
+    <div class="buttons">
+        <button class="buy">Legg i handlekurv</button>
+        <button class="more" onclick="rickroll()">Mer informasjon</button>
+    </div>
+
+    <ul>
+        <li>7.1 surroundlyd</li>
+        <li>Støydempende mikrofon</li>
+        <li>USB-tilkobling</li>
+        <li>Passer PC og konsoll</li>
+    </ul>
+
 </div>
 
 <footer>
@@ -143,3 +134,4 @@
 
 </body>
 </html>
+
