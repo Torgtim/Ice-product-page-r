@@ -86,45 +86,52 @@
             color: #666;
         }
 
-        /* Cookie popup som rektangel */
+        /* Cookie popup – bred, nederst */
         .cookie {
             position: fixed;
-            bottom: 20px; /* litt margin fra bunnen */
-            left: 50%;
-            transform: translateX(-50%);
+            bottom: 0; 
+            left: 0;
+            width: 100%; /* bredt på tvers */
             background: white;
-            border: 1px solid #ddd;
-            border-radius: 0; /* rektangel */
-            padding: 16px;
-            max-width: 90%;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border-top: 1px solid #ddd;
+            padding: 16px 20px;
+            box-shadow: 0 -2px 12px rgba(0,0,0,0.1);
             z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .cookie p {
             font-size: 14px;
             margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .cookie-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .cookie-buttons button {
             padding: 10px 14px;
-            border-radius: 0; /* rektangel-knapper */
+            border-radius: 12px; /* runde knapper */
             border: none;
             font-size: 14px;
             cursor: pointer;
-            margin-right: 8px;
-            margin-bottom: 6px;
         }
 
         .accept { background: #009ee3; color: white; }
         .decline { background: #e5e7eb; }
         .necessary { background: #f3f4f6; }
 
-        /* Liten plass til footer */
+        /* Ekstra plass til footer under popup */
         body::after {
             content: "";
             display: block;
-            height: 140px; /* høyde = popup + margin */
+            height: 140px;
         }
     </style>
 </head>
